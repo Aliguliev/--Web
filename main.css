@@ -43,10 +43,10 @@ body{
     font-weight: 600;
 }
 .week_day{
-    font-size: 1.25vh;
+    font-size: 1.5vh;
 }
 .data{
-    font-size: 1vh;
+    font-size: 1.2vh;
 }
 .days div:hover{
     background-color:  rgb(97, 97, 97);
