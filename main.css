@@ -1,0 +1,107 @@
+#main{
+    display: block;
+}
+body{
+    padding: 1vh;
+    background-color:black ;
+    color: white;
+    text-align: center;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1.5fr 7.5fr 1fr;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+#foto{
+    width: 90%;
+    border-radius: 50%;
+}
+#menu{
+    width: 2vh;
+    height: 1.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+.ln{
+    background-color: white;
+    height: 0.25vh;
+}
+#user_info{
+    padding: 10px;
+    text-align: start;
+    align-items: center;
+}
+#user_name{
+    font-size: 1.65vh;
+}
+#user_group{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin-top: -10px;
+}
+.days{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.days div{
+    background-color: rgb(42, 42, 42);
+    border-radius: 15%;
+    color:rgb(174, 174, 174);
+    font-weight: 600;
+}
+.week_day{
+    font-size: 1.5vh;
+}
+.data{
+    font-size: 1.2vh;
+}
+.days div:hover{
+    background-color:  rgb(97, 97, 97);
+    .week_day{
+        color:rgb(216, 216, 216); ;
+    }
+}
+.week-info{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-weight: 200;
+    font-size: 1.5vh;
+}
+#week{
+    margin-top: -2vh;
+    color: rgb(104, 104, 104);
+    font-weight: 500;
+}
+ul{
+    list-style-type:none;
+}
+.one-pred{
+    background-color: rgb(42, 42, 42);
+    text-align: start;
+    padding: 10px;
+    border-radius: 20px;
+    color:rgb(73, 73, 73);
+    
+}
+li{
+    margin-left: -4vh;
+    margin-bottom: 20px;
+}
+.place{
+    color:rgb(120, 120, 120);
+}
+.bild{
+    color:rgb(160, 160, 160);
+}
+.predName{
+    color:rgb(190, 190, 190);
+}
+.time{
+    color:rgb(120, 120, 120);
+}

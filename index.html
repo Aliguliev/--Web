@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Капипара Web</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <header>
+    </header>
+
+
+    <main>
+        <section id="main">
+            <section class="header">
+                <img id="foto" src="/imgs/1.webp" alt="">
+                <div id="user_info">
+                    <p id="user_group">Группа: 4102</p>
+                </div>
+                <div id="menu">
+                    <div class="ln"></div>
+                    <div class="ln"></div>
+                    <div class="ln"></div>
+                </div>
+            </section>
+            <section class="days">
+                
+                <div>
+                    <p class="week_day" onclick="viewDay('ПН')" >ПН</p>
+                </div>
+                <div>
+                    <p class="week_day" onclick="viewDay('ВТ')">ВТ</p>
+                </div>
+                <div>
+                    <p class="week_day" onclick="viewDay('СР')">СР</p>
+                </div>
+                <div>
+                    <p class="week_day" onclick="viewDay('ЧТ')">ЧТ</p>
+                </div>
+                <div>
+                    <p class="week_day" onclick="viewDay('ПТ')">ПТ</p>
+                </div>
+                <div>
+                    <p class="week_day" onclick="viewDay('СБ')">СБ</p>
+                </div>
+                <div>
+                    <p class="week_day" onclick="viewDay('ВС')">ВС</p>
+                </div>
+            </section>
+            <section class="raspisania">
+                <div class="week-info">
+                    <h2 id="day-ras">На <span id="week_day_info"></span></h2>
+                    <p id="week"></p>
+                </div>
+                <div class="ras">
+                    <ul id="ras">
+
+                    </ul>
+                </div>
+            </section> 
+        </section>
+    </main>
+
+
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
