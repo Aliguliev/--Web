@@ -50,7 +50,7 @@ if (week%2){
     weekText.innerText='Нечетная неделя'
 }
 const viewDay=(a)=>{
-    if (week % 2) {
+    if (week % 2==0) {
         renderRas(cht[0][f[a]]);
     } else {
         renderRas(necht[0][f[a]]);
