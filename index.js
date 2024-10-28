@@ -42,9 +42,9 @@ var now = new Date().getTime();
 var week = Math.round((now - today) / (1000 * 60 * 60 * 24 * 7));
 weekText = document.getElementById('week')
 weekDayInfoText = document.getElementById('week_day_info')
+console.log(week)
 
-
-if (week%2){
+if (week%2==0){
     weekText.innerText = 'Четная неделя'
 }else{
     weekText.innerText='Нечетная неделя'
