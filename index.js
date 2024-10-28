@@ -35,15 +35,19 @@ const renderRas=(array)=>{
 }
 let date = new Date().getDay()
 
-var year = new Date().getFullYear();
-var month = new Date().getMonth();
-var today = new Date(year, month, 0).getTime();
-var now = new Date().getTime();
-var week = Math.round((now - today) / (1000 * 60 * 60 * 24 * 7));
+function getWeekNumber(d) {
+    // Копируем дату
+    const date = new Date(d.getTime());
+    // Устанавливаем на 1 января
+    date.setHours(0, 0, 0, 0);
+    date.setDate(date.getDate() + 4 - (date.getDay() || 7)); // Устанавливаем на ближайший понедельник
+    const yearStart = new Date(date.getFullYear(), 0, 1);
+    return Math.ceil((((date - yearStart) / 86400000) + 1) / 7); // Возвращаем номер недели
+}
 weekText = document.getElementById('week')
 weekDayInfoText = document.getElementById('week_day_info')
 console.log(week)
-
+let week=getWeekNumber()
 if (week%2==0){
     weekText.innerText = 'Четная неделя'
 }else{
