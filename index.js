@@ -57,7 +57,12 @@ const viewDay=(a)=>{
         renderRas(necht[0][f[a]]);
     }
     weekDayInfoText.innerText = a.toLowerCase();
-
+    for( i in g){
+        d = document.getElementById(`${g[i]}`);
+        d.classList.remove('active');
+    }
+    i=document.getElementById(`${a}`);
+    i.classList.add('active');
 
    
 }
